@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parent Center"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        ></Button>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hor Center"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        ></Button>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Ver Center"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        ></Button>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parent Bottom"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        ></Button>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parent Right"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        ></Button>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parent Left"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        ></Button>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parent Left Bottom"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        ></Button>-->
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button 1"
+    android:layout_centerInParent="true"
+    android:id="@+id/btn1"
+    ></Button>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button 2"
+    android:layout_centerInParent="true"
+    android:id="@+id/btn2"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_below="@id/btn1"
+    ></Button>
+
+
+</RelativeLayout>

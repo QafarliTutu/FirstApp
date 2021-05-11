@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:text="@string/app_header"
+        android:textColor="#6D0480"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planets" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:buttonTint="#570465"
+        android:text="@string/marsCB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#4F0C5A"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxVenus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJupiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#570465"
+        android:foregroundTint="#03A9F4"
+        android:text="@string/jupiterCB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#4F0C5A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxVenus"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxMars" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#570465"
+        android:text="@string/venusCB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#4F0C5A"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxJupiter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMars"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxMars" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteredKg"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <EditText
+        android:id="@+id/enteredKg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:autofillHints=""
+        android:backgroundTint="#B270BD"
+        android:ems="10"
+        android:foregroundTint="#E4DBDB"
+        android:hint="@string/earth_weight"
+        android:inputType="numberDecimal"
+        android:textColor="#4F0C5A"
+        android:textColorHighlight="#101010"
+        android:textColorHint="@color/grey"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVenus" />
+
+    <ImageView
+        android:id="@+id/planets"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
